@@ -1,4 +1,4 @@
-Function Get-LTServiceInfo{
+Function Install-Automate{
 <#
 if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))  
 {  

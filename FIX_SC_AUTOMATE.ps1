@@ -24,4 +24,3 @@ Write-Host "--------------------------------------------------------------------
 Write-Host
 Invoke-Expression(New-Object Net.WebClient).DownloadString('http://bit.ly/LTPoSh') | iex; Install-LTService -Server https://proteksolutions.hostedrmm.com -Password MiIbitsBh26O65C58rTLR3ehQ4vPzX37 -LocationID $locationID
 pause
-}

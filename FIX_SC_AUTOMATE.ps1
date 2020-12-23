@@ -4,13 +4,13 @@ Write-Host "|Cleanup of Connectwise ScreenConnect/Automate***|"
 Write-Host "--------------------------------------------------"
 Write-Host 
 $locationId = Read-Host -prompt 'Location to install? Leave blank for ProTEK New Computers'
+If ($null -eq $Input) {$Input = '1'}
 Write-Host
 Write-Host "---------------------------------------------------"
 Write-Host "|Step 1: Uninstall of Connectwise ScreenConnect***|"
 Write-Host "---------------------------------------------------"
 $MyApp = Get-WmiObject -Class Win32_Product | Where-Object {$_.Vendor -Match "ScreenConnect"}
 $MyApp.Uninstall()
-If ($null -eq $Input) {$Input = '1'}
 Write-Host
 Write-Host "----------------------------------------------"
 Write-Host "|Step 2: Uninstall of Connectwise Automate***|"
